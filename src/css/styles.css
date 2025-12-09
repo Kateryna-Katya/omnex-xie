@@ -1206,3 +1206,83 @@ img {
     font-size: 0.85rem;
     color: var(--color-text-muted);
 }
+/* --- LEGAL PAGES STYLES --- */
+.pages {
+    padding-top: calc(var(--header-height) + 60px);
+    padding-bottom: 80px;
+    min-height: 100vh;
+}
+
+.pages__container {
+    max-width: 800px;
+    /* Узкая колонка для удобного чтения */
+    margin: 0 auto;
+}
+
+.pages__title {
+    font-family: var(--font-head);
+    font-size: 2.5rem;
+    margin-bottom: 50px;
+    line-height: 1.2;
+    border-bottom: 1px solid var(--color-border);
+    padding-bottom: 30px;
+}
+
+.pages__content h2 {
+    font-family: var(--font-head);
+    font-size: 1.5rem;
+    color: var(--color-text);
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+
+.pages__content p {
+    font-size: 1rem;
+    color: var(--color-text-muted);
+    margin-bottom: 20px;
+    line-height: 1.7;
+}
+
+.pages__content ul {
+    list-style: disc;
+    padding-left: 20px;
+    margin-bottom: 30px;
+    color: var(--color-text-muted);
+}
+
+.pages__content li {
+    margin-bottom: 15px;
+    padding-left: 10px;
+}
+
+.pages__content li strong {
+    color: var(--color-text);
+    font-weight: 600;
+}
+
+.pages__content a {
+    color: var(--color-accent);
+    text-decoration: underline;
+    transition: var(--transition);
+}
+
+.pages__content a:hover {
+    color: #fff;
+}
+
+.pages__footer-link {
+    margin-top: 60px;
+    padding-top: 30px;
+    border-top: 1px solid var(--color-border);
+}
+
+/* Mobile Adjustments */
+@media (max-width: 768px) {
+    .pages__title {
+        font-size: 2rem;
+    }
+
+    .pages__content h2 {
+        font-size: 1.3rem;
+    }
+}
